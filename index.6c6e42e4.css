@@ -388,7 +388,7 @@ a:hover, a:active {
   font-weight: 600;
 }
 
-@media (width <= 992px) {
+@media (max-width: 992px) {
   .search-box {
     width: 100vw;
     height: 100vh;
