@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Weather App</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Test">
+    <meta name="author" content="Jan Pabisiak">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/styles/style.css">
+    <link rel="icon" type="image/png" href="src/images/favicon.png">
+    <script type="module" src="src/scripts/controller.js" defer></script>
+</head>
+
+<body>
+    <div class="error-message hidden"></div>
+    <div class="loading-div hidden">
+        <div class="loading"></div>
+    </div>
+    <div class="btn hidden">Back</div>
+    <div class="app">
+        <div class="search-box">
+            <h1>Weather App</h1>
+            <div class="section-search">
+                <input type="text" class="search" placeholder="Enter city name">
+                <div class="localize-div"><svg xmlns="http://www.w3.org/2000/svg" class="localize-icon" viewBox="0 0 24 24">
+                        <title>localize</title>
+                        <path d="M11.62,1L17.28,6.67L15.16,8.79L13.04,6.67L11.62,8.09L13.95,10.41L12.79,11.58L13.24,12.04C14.17,11.61 15.31,11.77 16.07,12.54L12.54,16.07C11.77,15.31 11.61,14.17 12.04,13.24L11.58,12.79L10.41,13.95L8.09,11.62L6.67,13.04L8.79,15.16L6.67,17.28L1,11.62L3.14,9.5L5.26,11.62L6.67,10.21L3.84,7.38C3.06,6.6 3.06,5.33 3.84,4.55L4.55,3.84C5.33,3.06 6.6,3.06 7.38,3.84L10.21,6.67L11.62,5.26L9.5,3.14L11.62,1M18,14A4,4 0 0,1 14,18V16A2,2 0 0,0 16,14H18M22,14A8,8 0 0,1 14,22V20A6,6 0 0,0 20,14H22Z" />
+                    </svg></div>
+                <div class="submit">Search</div>
+            </div>
+            <div class="section-history hidden">
+                <h3>Previous locations</h3>
+                <div class="history-locations"></div>
+                <p class="clear-history">Clear History</p>
+            </div>
+        </div>
+        <div class="weather-box hidden">
+            <div class="weather-today">
+                <div class="section-now">
+                    <div class="section-title"></div>
+                    <div class="weather-today-icon-svg"></div>
+                    <div class="weather-today-icon-text">
+                        <h1 class="weather-today-temperature"></h1>
+                        <p class="weather-today-localization"></p>
+                    </div>
+                </div>
+                <div class="weather-today-badges">
+                    <div class="badge">
+                        <h2 id="humidity"></h2>
+                        <p>Humidity</p>
+                    </div>
+                    <div class="badge">
+                        <h2 id="windSpeed"></h2>
+                        <p>Wind Speed</p>
+                    </div>
+                    <div class="badge">
+                        <h2 id="pressure"></h2>
+                        <p>Pressure</p>
+                    </div>
+                    <div class="badge">
+                        <h2 id="visibility"></h2>
+                        <p>Visibility</p>
+                    </div>
+                    <div class="badge">
+                        <h2 id="rainChance"></h2>
+                        <p>Rain Chance</p>
+                    </div>
+                    <div class="badge">
+                        <h2 id="UVIndex"></h2>
+                        <p>Daily UV Index</p>
+                    </div>
+                </div>
+                <div class="weather-today-hours"></div>
+            </div>
+            <div class="section-next"></div>
+        </div>
+    </div>
+    <p class="copyright">Copyright © <span class="year"></span> <a href="https://github.com/janpabisiak">Jan Pabisiak</a></p>
+</body>
+
+</html>

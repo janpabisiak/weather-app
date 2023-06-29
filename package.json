@@ -1,0 +1,19 @@
+{
+	"name": "weather-app",
+	"version": "1.0.0",
+	"description": "",
+	"scripts": {
+		"start": "parcel index.html --dist-dir public",
+		"build": "parcel build index.html --dist-dir public"
+	},
+	"author": "Jan Pabisiak",
+	"license": "ISC",
+	"devDependencies": {
+		"parcel": "^2.9.2",
+		"process": "^0.11.10"
+	},
+	"dependencies": {
+		"core-js": "^3.31.0",
+		"regenerator-runtime": "^0.13.11"
+	}
+}
