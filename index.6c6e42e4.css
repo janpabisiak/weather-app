@@ -408,7 +408,7 @@ a:hover, a:active {
   .section-now {
     flex-direction: column;
     gap: .5rem;
-    padding-top: .5rem;
+    margin-top: .5rem;
   }
 
   .section-title {
