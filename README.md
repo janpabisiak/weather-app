@@ -1,6 +1,6 @@
 <img align="center" src="https://raw.githubusercontent.com/janpabisiak/weather-app/main/cover.png">
 
-# Weather App
+# Weather App [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/facebook/react/blob/main/LICENSE)
 
 A weather app written in JavaScript with a completely Model-View-Controller Architecture. There are two ways to fetch weather data:
 
